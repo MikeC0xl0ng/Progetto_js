@@ -1,0 +1,29 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css');
+
+body {
+  background-color: rgba(0,0,0,1.00) !important;
+}
+
+.row{
+  margin-top: 10%;
+}
+
+i{
+  display: block;
+  margin:auto;
+  text-align: center;
+  display: grid !important;
+  animation: spin 3s infinite linear;
+}
+
+i::after{
+  width: 200px;
+  height: 160px;
+  transform: translateX(-50%);
+}
+
+@keyframes spin {
+  0%{transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
